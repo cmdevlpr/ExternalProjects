@@ -1,0 +1,33 @@
+<div class="wrap">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex justify-content-between align-items-center leftContent">
+					<img src="../assets/logo.png" height="40">
+					<div>
+						<button class="btn btn-outline-success btn-rounded" (click)="capture()" title="Click a Low5Selfie.!!!"><i class="fas fa-camera fa-lg"></i></button>
+						<button class="btn btn-outline-warning btn-rounded" id="flip" (click)="flipCam()" title="Switch Camera"><i class="fas fa-sync-alt fa-lg"></i></button>
+						<button class="btn btn-outline-primary btn-rounded d-none" id="upload" (click)="upload()" title="Secure your Low5Selfie with us."><i class="fas fa-cloud-upload-alt fa-lg"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row justify-content-center">
+					<div class="col">
+						<div class="text-center">
+							<h6 class="page-header live"><i class="fas fa-video mr-1"></i>Live</h6>
+							<video #video autoplay></video><br>
+							<video #video1 class="trans" autoplay></video>
+						</div>
+					</div>
+					<div class="col d-none" id="output-wrap">
+						<h6 class="page-header preview text-center"><i class="fas fa-eye mr-1"></i>Preview</h6>
+						<div id="output">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<canvas #canvas id="can" width="600" height="300" style="visibility: collapse; position: absolute;"></canvas>
+	</div>
+</div>
