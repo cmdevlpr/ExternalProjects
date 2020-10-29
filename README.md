@@ -1,6 +1,6 @@
-# Low5Selfie
+# Low5Selfie - Angular version 8.3.1.
 
-Angular version 8.3.1.
+![Image of output](https://github.com/cmdevlpr/ExternalProjects/blob/main/Output.png)
 
 ## Development Details
 
